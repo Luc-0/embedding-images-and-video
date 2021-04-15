@@ -36,18 +36,9 @@ a {
   margin: 20px 20px 0;
 }
 
-.related-videos {
-  height: 100%;
-  width: 350px;
-  min-height: 130vh;
-  max-width: 350px;
-
-  background-color: blue;
-  color: white;
-}
-
 .navbar {
   position: fixed;
+  z-index: 1;
 
   display: flex;
   align-items: center;
@@ -122,6 +113,69 @@ a {
   width: 32px;
   height: 32px;
   border-radius: 50%;
+}
+
+.suggested-videos {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  width: 350px;
+  min-height: 130vh;
+  max-width: 350px;
+  padding: 20px 0;
+}
+
+.suggested-videos article {
+  margin: 5px 0;
+}
+
+.video-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  height: auto;
+  width: 100%;
+}
+
+.video-card .video-card-thumbnail {
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+  width: 160px;
+  height: 95px;
+  min-width: 160px;
+}
+
+.video-card .video-card-thumbnail img {
+  height: auto;
+  width: 100%;
+}
+
+.video-card .video-card-thumbnail span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.video-card .video-card-info {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  margin-left: 10px;
+}
+
+.video-card .video-card-info span {
+  font-weight: 600;
+}
+
+.video-card .video-card-info small {
+  font-size: 0.8em;
 }
 
 .btn {
