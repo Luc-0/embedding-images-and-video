@@ -1,0 +1,158 @@
+:root {
+  --main-btn-color: hsl(0, 0%, 23%);
+  --main-bg-color: hsl(0, 0%, 11%);
+  --seconday-color: hsl(0, 0%, 13%);
+  --secondary-light-color: hsl(0, 0%, 20%);
+}
+
+html,
+body {
+  min-height: 100vh !important;
+  height: 100%;
+}
+
+main {
+  padding-top: 56px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.page-container {
+  display: flex;
+  background-color: var(--main-bg-color);
+  padding: 0 20px;
+}
+
+.column {
+  height: 100%;
+  width: 100%;
+  flex: 1 1 0;
+}
+
+.video {
+  margin: 20px 20px 0;
+}
+
+.related-videos {
+  height: 100%;
+  width: 350px;
+  min-height: 130vh;
+  max-width: 350px;
+
+  background-color: blue;
+  color: white;
+}
+
+.navbar {
+  position: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 56px;
+  width: 100%;
+
+  background-color: var(--seconday-color);
+  color: #fff;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto 0 20px;
+}
+
+.yt-icon {
+  position: relative;
+  width: 28px;
+  height: 24px;
+
+  border-radius: 7px;
+  background-color: red;
+}
+
+.yt-icon div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 5px;
+
+  background-color: #fff;
+}
+
+.title-container h2 {
+  margin-left: 5px;
+}
+
+.searchbar-container {
+  display: flex;
+  min-width: 325px;
+  max-width: 600px;
+  width: 100%;
+
+  margin-right: auto;
+  padding: 1px;
+  background-color: var(--secondary-light-color);
+}
+
+.searchbar {
+  width: 100%;
+
+  color: #fff;
+  padding: 5px 10px;
+  min-height: 32px;
+
+  border: #555;
+  background-color: var(--main-bg-color);
+  outline: none;
+}
+
+.profile-img-container {
+  margin: 0 20px;
+}
+
+.profile-img-container img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.btn {
+  color: #fff;
+  background-color: var(--main-btn-color);
+  outline: none;
+  border: none;
+}
+
+.video-player {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  max-height: 85vh;
+
+  background-color: black;
+}
+
+.video-player video {
+  width: 100%;
+  height: auto;
+}
+
+.video-information {
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+  max-width: 1700px;
+
+  background-color: aqua;
+  margin: 0 auto;
+}
