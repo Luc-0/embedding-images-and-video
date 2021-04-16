@@ -5,6 +5,9 @@
   --main-bg-color: hsl(0, 0%, 11%);
   --seconday-color: hsl(0, 0%, 13%);
   --secondary-light-color: hsl(0, 0%, 20%);
+  --text-secondary: #aaa;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --yt-red: #c00;
 }
 
 html {
@@ -209,6 +212,7 @@ a {
 
 .video-information {
   display: flex;
+  flex-direction: column;
 
   height: 100%;
   width: 100%;
@@ -264,10 +268,52 @@ a {
   margin: 0 auto;
 }
 
-.video-information p {
+.video-header p {
   margin: 0 10px;
 }
 
 .wide {
   width: 100%;
+}
+
+.channel-profile-img {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+.video-channel {
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px 0;
+}
+
+.video-channel .video-description {
+  width: 600px;
+  max-width: 600px;
+}
+
+.video-channel .btn-subscribe {
+  margin-left: auto;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-secondary-color {
+  color: var(--text-secondary);
+}
+
+.btn-subscribe {
+  height: 37px;
+  width: 100%;
+  max-width: 105px;
+
+  font-size: 0.9em;
+  color: #fff;
+  background-color: var(--yt-red);
+
+  border-radius: 1px;
+  border: none;
+  outline: none;
 }
